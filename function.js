@@ -31,3 +31,13 @@ function sum(...numbers) {
 
 console.log(sum(1, 2, 3));  // Output: 6
 console.log(sum(4, 5, 6, 7));  // Output: 22
+
+//spread operator is simply convert array into single value for a function
+
+function addNumbers(a, b, c) {
+  return a + b + c;
+}
+
+const numbers = [1, 2, 3];
+const sum = addNumbers(...numbers);
+console.log(sum); // Output: 6
