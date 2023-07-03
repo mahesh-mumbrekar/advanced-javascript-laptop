@@ -39,5 +39,17 @@ function addNumbers(a, b, c) {
 }
 
 const numbers = [1, 2, 3];
-const sum = addNumbers(...numbers);
-console.log(sum); // Output: 6
+const addition = addNumbers(...numbers);
+console.log(addition); // Output: 6
+
+
+//template literals
+
+function greetUser( gretting,userName='max') {
+  //console.log(gretting+' '+userName +' !'); inteadof this we can
+  console.log(` ${gretting} ${userName}!`)
+  
+}
+
+greetUser('mahesh');
+
