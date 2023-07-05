@@ -1,23 +1,20 @@
 const fs=require('fs/promises');
 
 
-function readFile(){
+async function readFile(){
   let fileData;
 
  /* fs.readFile('data.txt',function(error,fileData){
      console.log('File parsing done!');
      console.log(fileData.toString());
   })*/
-  fs.readFile('data.txt')
-  .then(function (fileData){
+   fileData = await fs.readFile('data.txt')
     console.log('File parsing done!');
     console.log(fileData.toString());
-  })
-  .catch(function(error){
-    console.log(error);  
-  })
+    console.log('hi there!');
   
-  console.log('hi there!');
+ 
+
 }
 
 
