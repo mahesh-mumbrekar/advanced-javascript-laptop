@@ -8,10 +8,14 @@ function readFile(){
      console.log('File parsing done!');
      console.log(fileData.toString());
   })*/
-  fs.readFile('data.txt').then(function (fileData){
+  fs.readFile('data.txt')
+  .then(function (fileData){
     console.log('File parsing done!');
     console.log(fileData.toString());
-  });
+  })
+  .catch(function(error){
+    console.log(error);  
+  })
   
   console.log('hi there!');
 }
